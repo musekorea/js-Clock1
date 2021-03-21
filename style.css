@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e9e9e9;
+}
+.container {
+  width: 300px;
+  height: 300px;
+  border: 11px solid #222;
+  border-radius: 50%;
+
+  background-color: #e9e9e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  box-shadow: 9px 9px 6px rgba(0, 0, 0, 0.6),
+    inset 9px 9px 6px rgba(0, 0, 0, 0.6),
+    inset -5px -5px 6px rgba(255, 255, 255, 0.9), -6px -6px 9px white;
+}
+.num {
+  height: 100%;
+  position: absolute;
+}
+.text {
+  font-size: 25px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 10px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+#num12 {
+}
+#num1 {
+  transform: rotate(30deg);
+}
+#text1 {
+  transform: rotate(-30deg);
+}
+#num2 {
+  transform: rotate(60deg);
+}
+#text2 {
+  transform: rotate(-60deg);
+}
+#num3 {
+  transform: rotate(90deg);
+}
+#text3 {
+  transform: rotate(-90deg);
+}
+#num4 {
+  transform: rotate(120deg);
+}
+#text4 {
+  transform: rotate(-120deg);
+}
+#num5 {
+  transform: rotate(150deg);
+}
+#text5 {
+  transform: rotate(-150deg);
+}
+#num6 {
+  transform: rotate(180deg);
+}
+#text6 {
+  transform: rotate(180deg);
+}
+#num7 {
+  transform: rotate(210deg);
+}
+#text7 {
+  transform: rotate(-210deg);
+}
+#num8 {
+  transform: rotate(240deg);
+}
+#text8 {
+  transform: rotate(-240deg);
+}
+#num9 {
+  transform: rotate(270deg);
+}
+#text9 {
+  transform: rotate(-270deg);
+}
+#num10 {
+  transform: rotate(300deg);
+}
+#text10 {
+  transform: rotate(-300deg);
+}
+#num11 {
+  transform: rotate(330deg);
+}
+#text11 {
+  transform: rotate(-330deg);
+}
+#centerPoint {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+.hand {
+  position: absolute;
+  transform-origin: bottom;
+  top: 50px;
+  border-radius: 20px;
+  z-index: 999;
+}
+#secondHand {
+  height: 36%;
+  width: 2px;
+  top: 40px;
+  background-color: black;
+  transform: rotate(360deg);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
+}
+#minutedHand {
+  height: 33%;
+  width: 4px;
+  background-color: #222;
+  transform: rotate(360deg);
+  box-shadow: -6px -6px 6px rgba(0, 0, 0, 0.4);
+}
+#hourHand {
+  height: 30%;
+  width: 7px;
+  top: 55px;
+  background-color: #222;
+  transform: rotate(360deg);
+  box-shadow: -6px -6px 6px rgba(0, 0, 0, 0.4);
+}
+#name {
+  position: absolute;
+  top: 190px;
+  font-size: 13px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
